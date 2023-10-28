@@ -1,5 +1,10 @@
 syntax = "proto3";
 
+enum MessageType {
+   REQUEST = 0;
+   RESPONSE = 1;
+}
+
 message Header {
     required uint32 type;
     required uint32 cmd;
