@@ -13,7 +13,8 @@ message Header {
 }
 
 message ExtraHeader {
-    
+    required uint32 sender;
+    required uint32 recver;
 }
 
 message Message {
