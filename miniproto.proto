@@ -8,6 +8,8 @@ enum MessageType {
 message Header {
     required uint32 type;
     required uint32 cmd;
+    required uint32 req_id;
+    required uint32 ack_id;
 }
 
 message ExtraHeader {
