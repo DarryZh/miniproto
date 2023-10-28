@@ -2,10 +2,10 @@ syntax = "proto3";
 
 message Empty {}
 
-service MiniProto {
-  rpc AddPlan (Plan) returns (Empty) {} 
-  rpc UpdatePlan (Plan) returns (Empty) {}
-  rpc DeletePlan(Plan) returns(Empty) {}
+enum Cmd {
+  ADD_PLAN = 0;
+  UPDATE_PLAN = 1;
+  DELETE_PLAN = 2;
 }
 
 message Plan {
