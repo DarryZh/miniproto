@@ -4,18 +4,18 @@ message Empty {}
 
 service MiniProto {
   rpc AddPlan (Plan) returns (Empty) {} 
-	rpc UpdatePlan (Plan) returns (Empty) {}
-	rpc DeletePlan(Plan) returns(Empty) {}
+  rpc UpdatePlan (Plan) returns (Empty) {}
+  rpc DeletePlan(Plan) returns(Empty) {}
 }
 
 message Plan {
-	string id = 1;
+  string id = 1;
   string name = 2;
   optional uint32 start_date = 3;
   optional uint32 end_date = 4;
   repeated RepeatType repeat_at = 5;
   optional TimeType time_type = 6;
-	repeated uint32 work_times = 7;
+  repeated uint32 work_times = 7;
   repeated Action actions = 8;
 }
 
