@@ -1,3 +1,1 @@
 Message.payload max_size:230
-ExtraHeader.sender max_size:32
-ExtraHeader.revcer max_size:32
