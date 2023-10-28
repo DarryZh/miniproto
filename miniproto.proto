@@ -1,11 +1,16 @@
 syntax = "proto3";
 
-message CommonRequest {
-    string method = 1;
-    bytes payload = 2;
+message Header {
+    required uint32 type;
+    required uint32 cmd;
 }
 
-message CommonResponse {
-    int code = 1;
-    bytes payload = 2;
+message ExtraHeader {
+    
+}
+
+message Message {
+    required Header header;
+    optional ExtraHeader extra_header;
+    required bytes payload;
 }
