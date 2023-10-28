@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message CommonRequest {
+    string method = 1;
+    bytes payload = 2;
+}
+
+message CommonResponse {
+    int code = 1;
+    bytes payload = 2;
+}
