@@ -1,7 +1,5 @@
 syntax = "proto3";
 
-message Empty {}
-
 enum Cmd {
   ADD_PLAN = 0;
   UPDATE_PLAN = 1;
