@@ -20,5 +20,5 @@ message ExtraHeader {
 message Message {
     required Header header = 1;
     optional ExtraHeader extra_header = 2;
-    required bytes payload = 3;
+    optional bytes payload = 3;
 }
