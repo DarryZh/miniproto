@@ -6,19 +6,19 @@ enum MessageType {
 }
 
 message Header {
-    required uint32 type;
-    required uint32 cmd;
-    required uint32 req_id;
-    required uint32 ack_id;
+    required uint32 type = 1;
+    required uint32 cmd = 2;
+    required uint32 req_id =3;
+    required uint32 respon_id = 4;
 }
 
 message ExtraHeader {
-    required uint32 sender;
-    required uint32 recver;
+    required uint32 sender = 1;
+    required uint32 recver = 2;
 }
 
 message Message {
-    required Header header;
-    optional ExtraHeader extra_header;
-    required bytes payload;
+    required Header header = 1;
+    optional ExtraHeader extra_header = 2;
+    required bytes payload = 3;
 }
